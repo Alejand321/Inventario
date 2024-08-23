@@ -49,7 +49,4 @@ Instrucciones y ejemplos para ejecutar el conjunto de pruebas.
 # python manage.py runserver
 ```
 
-### Login
-
-Usuario= aleja376, Contraseña=mnp12345..00 .
 
