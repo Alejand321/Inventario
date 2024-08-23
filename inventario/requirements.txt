@@ -1,0 +1,4 @@
+Python==3.12.4
+Django==5.1
+Postgresql==16
+psycopg2==2.9.9
