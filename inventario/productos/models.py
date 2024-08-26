@@ -7,7 +7,7 @@ class Producto(models.Model):
     disponible = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.nombre
+        return f"{self.nombre}"
 
 class Caracteristica(models.Model):
     producto = models.ForeignKey(Producto, related_name='caracteristicas', on_delete=models.CASCADE)
