@@ -1,8 +1,10 @@
+<!-- filepath: /c:/Users/HP/Desktop/UPweb/inventario/productos/templates/productos/listar_productos.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Lista de Productos</title>
-    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
     <h1>Lista de Productos</h1>
@@ -10,13 +12,10 @@
     <ul>
         {% for producto in productos %}
             <li>
-                {{ producto.nombre }} - {{ producto.descripcion }} - ${{ producto.precio }} - {% if producto.disponible %}Disponible{% else %}No disponible{% endif %}
+                {{ producto.nombre }} - {{ producto.descripcion }} - ₲{{ producto.precio }} - {% if producto.disponible %}Disponible{% else %}No disponible{% endif %}
                 <a href="{% url 'eliminar_producto' producto.pk %}">Eliminar</a>
             </li>
         {% endfor %}
     </ul>
-    
 </body>
-
-
 </html>

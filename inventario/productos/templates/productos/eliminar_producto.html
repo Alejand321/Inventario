@@ -1,8 +1,10 @@
+<!-- filepath: /c:/Users/HP/Desktop/UPweb/inventario/productos/templates/productos/eliminar_producto.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Eliminar Producto</title>
-    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
     <h1>Eliminar Producto</h1>
@@ -13,6 +15,4 @@
     </form>
     <a href="{% url 'listar_productos' %}">Cancelar</a>
 </body>
-
-
 </html>
